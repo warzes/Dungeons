@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &136126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407392}
+  - component: {fileID: 11496638}
+  m_Layer: 0
+  m_Name: ItemsLibrary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 987, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11496638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8321fe052ab10f14f9a5756e6b70769a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  things:
+  - id: t_key_gold
+    name: Key
+    description: 
+    icon: {fileID: 21300008, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 0
+  weapons:
+  - id: w_axe
+    name: Axe
+    description: 
+    icon: {fileID: 21300012, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 2
+    model: {fileID: 183408, guid: 72a58a594bc1bd84eb31895acc245c8a, type: 3}
+    damage:
+      minPhysical: 20
+      maxPhysical: 40
+      fire: 0
+      ice: 0
+      electro: 0
+    weaponMeleeType: 0
+  - id: w_sword
+    name: Sword
+    description: 
+    icon: {fileID: 21300010, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 2
+    model: {fileID: 119306, guid: 0ee6572ff966a964e855eedcb967a0ca, type: 3}
+    damage:
+      minPhysical: 15
+      maxPhysical: 25
+      fire: 0
+      ice: 0
+      electro: 0
+    weaponMeleeType: 0
+  - id: w_sword1
+    name: Sword 1
+    description: 
+    icon: {fileID: 21300010, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 2
+    model: {fileID: 119306, guid: 0ee6572ff966a964e855eedcb967a0ca, type: 3}
+    damage:
+      minPhysical: 10
+      maxPhysical: 10
+      fire: 0
+      ice: 0
+      electro: 0
+    weaponMeleeType: 0
+  staffs:
+  - id: s_ice
+    name: Staff of Ice
+    description: 
+    icon: {fileID: 21300014, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 3
+    model: {fileID: 173600, guid: e5cf2b1fab4c9834fa8b4e3275c56fed, type: 3}
+    bullet: {fileID: 158118, guid: 4a5b04d008fdbe744ab1a9b1b0df6815, type: 3}
+    mana: 15
+  - id: s_fire
+    name: Staff of Fire
+    description: 
+    icon: {fileID: 21300022, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 3
+    model: {fileID: 131826, guid: 213e2b3d9313dc64ca0b146bf7374be5, type: 3}
+    bullet: {fileID: 132190, guid: ea80f623ddf52f74b9e5e7b279ce6bd6, type: 3}
+    mana: 10
+  wearable:
+  - id: wr_helmet
+    name: Helmet
+    description: 
+    icon: {fileID: 21300024, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 4
+    wearableType: 1
+    defenceBonus:
+      physical: 0.1
+      fire: 0
+      ice: 0
+      electro: 0
+    strenghtBonus: 0
+    staminaBonus: 0
+    mindBonus: 0
+    willpowerBonus: 0
+  - id: wr_armor
+    name: Armor
+    description: 
+    icon: {fileID: 21300020, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 4
+    wearableType: 0
+    defenceBonus:
+      physical: 0.25
+      fire: 0
+      ice: 0
+      electro: 0
+    strenghtBonus: 0
+    staminaBonus: 0
+    mindBonus: 0
+    willpowerBonus: 0
+  - id: wr_ring_ice
+    name: Ring of Ice
+    description: 
+    icon: {fileID: 21300006, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 4
+    wearableType: 3
+    defenceBonus:
+      physical: 0
+      fire: 0
+      ice: 0.5
+      electro: 0
+    strenghtBonus: 0
+    staminaBonus: 0
+    mindBonus: 0
+    willpowerBonus: 0
+  - id: wr_amulet_stamina
+    name: Amulet of Stamina
+    description: 
+    icon: {fileID: 21300016, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 4
+    wearableType: 2
+    defenceBonus:
+      physical: 0
+      fire: 0
+      ice: 0
+      electro: 0
+    strenghtBonus: 0
+    staminaBonus: 3
+    mindBonus: 0
+    willpowerBonus: 0
+  - id: wr_amulet_willpower
+    name: Amulet of Willpower
+    description: 
+    icon: {fileID: 21300018, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 4
+    wearableType: 2
+    defenceBonus:
+      physical: 0
+      fire: 0
+      ice: 0
+      electro: 0
+    strenghtBonus: 0
+    staminaBonus: 0
+    mindBonus: 0
+    willpowerBonus: 4
+  potions:
+  - id: p_health
+    name: Healing Potion
+    description: 
+    icon: {fileID: 21300002, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 1
+    potionType: 0
+    healthPoints: 50
+    manaPoints: 0
+    experiencePoints: 0
+  - id: p_mana
+    name: Mana Potion
+    description: 
+    icon: {fileID: 21300004, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 1
+    potionType: 1
+    healthPoints: 0
+    manaPoints: 50
+    experiencePoints: 0
+  - id: p_exp
+    name: Potion of Experience
+    description: 
+    icon: {fileID: 21300000, guid: 682516f7a70556140b18626f94e2dad7, type: 3}
+    itemType: 1
+    potionType: 2
+    healthPoints: 0
+    manaPoints: 0
+    experiencePoints: 200

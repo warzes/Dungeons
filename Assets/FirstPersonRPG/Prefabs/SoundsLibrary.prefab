@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &187382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427672}
+  - component: {fileID: 11404658}
+  m_Layer: 0
+  m_Name: SoundsLibrary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187382}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11404658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b676e45103800a64490b4d49481a72d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - id: error
+    clip: {fileID: 8300000, guid: 2cb79bd0533d4ef40b4b4392bf31ebfd, type: 3}
+    volume: 1
+    is2d: 1
+  - id: hit
+    clip: {fileID: 8300000, guid: 476cb8074874f3b46ad004ca10006709, type: 3}
+    volume: 1
+    is2d: 0
+  - id: hit_player
+    clip: {fileID: 8300000, guid: d70bf3fcd3378234f985c4c1edfdb98c, type: 3}
+    volume: 1
+    is2d: 1
+  - id: pick_up
+    clip: {fileID: 8300000, guid: 688efe5d8e52c834f88a5dfa9a420dbd, type: 3}
+    volume: 1
+    is2d: 1
+  - id: equip
+    clip: {fileID: 8300000, guid: 688efe5d8e52c834f88a5dfa9a420dbd, type: 3}
+    volume: 1
+    is2d: 1
+  - id: door
+    clip: {fileID: 8300000, guid: 7e7ce1c8caa6fde47b19be6b403b9f0f, type: 3}
+    volume: 1
+    is2d: 0
+  - id: drink
+    clip: {fileID: 8300000, guid: 688efe5d8e52c834f88a5dfa9a420dbd, type: 3}
+    volume: 1
+    is2d: 1
