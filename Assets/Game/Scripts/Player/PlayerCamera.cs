@@ -2,18 +2,13 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-	[SerializeField] private float sensX = 400.0f;
-	[SerializeField] private float sensY = 400.0f;
+	public float sensX = 400.0f;
+	public float sensY = 400.0f;
 
-	private Transform orientation;
+	public Transform orientation;
 
-	private float xRotation;
-	private float yRotation;
-
-	private void Awake()
-	{
-		orientation = GetComponentInParent<Transform>();
-	}
+	float xRotation;
+	float yRotation;
 
 	private void Start()
 	{
@@ -33,6 +28,7 @@ public class PlayerCamera : MonoBehaviour
 		xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
 		// rotate cam and orientation
-		orientation.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+		transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+		orientation.rotation = Quaternion.Euler(0, yRotation, 0);
 	}
 }
